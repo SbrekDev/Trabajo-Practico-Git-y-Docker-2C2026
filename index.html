@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Razas de Perros — Explora y descubre</title>
+  <meta name="description" content="Explora razas de perros con fotos e información. Datos e imágenes de la Dog CEO API." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">🐶 Razas de Perros</h1>
+      <p class="tagline">Explora las distintas razas, con fotos y datos de cada una.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="toolbar" aria-label="Filtros">
+      <input
+        type="search"
+        id="search"
+        class="search-input"
+        placeholder="Buscar una raza…"
+        aria-label="Buscar una raza"
+      />
+    </section>
+
+    <section class="breeds-section" aria-labelledby="breeds-heading">
+      <h2 id="breeds-heading" class="section-title">Razas disponibles</h2>
+      <div id="breeds-grid" class="breeds-grid">
+        <p class="placeholder">Las razas se cargarán aquí.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Fotos e información de razas: <a href="https://dog.ceo/dog-api/" target="_blank" rel="noopener noreferrer">Dog CEO API</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
