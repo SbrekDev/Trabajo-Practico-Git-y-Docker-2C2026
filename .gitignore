@@ -1,0 +1,65 @@
+# ============================================================
+# Material del TP — NO publicar en GitHub
+# ============================================================
+# Enunciado y transcripción de clase
+*.docx
+*.doc
+*.pdf
+transcripcion*.txt
+_enunciado.txt
+
+# ============================================================
+# Herramientas de IA / planificación — NO publicar
+# ============================================================
+.atl/
+.agents/
+openspec/
+.openspec/
+.kiro/
+.claude/
+odd/
+
+# ============================================================
+# Sistema operativo
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+Desktop.ini
+
+# ============================================================
+# Editores / IDE
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================================
+# Dependencias y entorno
+# ============================================================
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Variables de entorno / secretos
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log

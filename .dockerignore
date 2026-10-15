@@ -1,0 +1,13 @@
+.git
+.gitignore
+.atl/
+odd/
+openspec/
+.agents/
+*.docx
+*.doc
+*.pdf
+transcripcion*.txt
+README.md
+Dockerfile
+.dockerignore
