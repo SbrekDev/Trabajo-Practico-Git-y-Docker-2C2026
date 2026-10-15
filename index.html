@@ -6,6 +6,7 @@
   <title>Razas de Perros — Explora y descubre</title>
   <meta name="description" content="Explora razas de perros con fotos e información. Datos e imágenes de la Dog CEO API." />
   <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -17,19 +18,15 @@
 
   <main class="container">
     <section class="toolbar" aria-label="Filtros">
-      <input
-        type="search"
-        id="search"
-        class="search-input"
-        placeholder="Buscar una raza…"
-        aria-label="Buscar una raza"
-      />
+      <select id="breed-select" class="breed-select" aria-label="Seleccionar una raza">
+        <option value="" disabled selected>Cargando razas...</option>
+      </select>
     </section>
 
-    <section class="breeds-section" aria-labelledby="breeds-heading">
-      <h2 id="breeds-heading" class="section-title">Razas disponibles</h2>
-      <div id="breeds-grid" class="breeds-grid">
-        <p class="placeholder">Las razas se cargarán aquí.</p>
+    <section class="gallery-section" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading" class="section-title">Galería de la raza</h2>
+      <div id="gallery-grid" class="breeds-grid">
+        <p class="placeholder">Seleccioná una raza para ver sus fotos.</p>
       </div>
     </section>
   </main>

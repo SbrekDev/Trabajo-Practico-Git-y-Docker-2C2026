@@ -48,7 +48,8 @@ body {
   margin: 32px 0 8px;
 }
 
-.search-input {
+.search-input,
+.breed-select {
   width: 100%;
   max-width: 360px;
   padding: 12px 16px;
@@ -56,6 +57,7 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--surface);
+  cursor: pointer;
 }
 
 .section-title {
