@@ -60,6 +60,26 @@ body {
   cursor: pointer;
 }
 
+.breed-info-section {
+  margin-bottom: 24px;
+}
+
+.breed-info-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.breed-info-card p {
+  margin: 8px 0;
+}
+
+.breed-info-card strong {
+  color: var(--accent);
+}
+
 .section-title {
   margin: 24px 0 16px;
   font-size: 1.25rem;

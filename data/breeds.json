@@ -1,0 +1,47 @@
+{
+  "akita": {
+    "origen": "Japón",
+    "tamaño": "Grande",
+    "temperamento": "Fiel, dócil, valiente"
+  },
+  "beagle": {
+    "origen": "Reino Unido",
+    "tamaño": "Mediano",
+    "temperamento": "Amigable, curioso, alegre"
+  },
+  "boxer": {
+    "origen": "Alemania",
+    "tamaño": "Grande",
+    "temperamento": "Juguetón, enérgico, leal"
+  },
+  "chihuahua": {
+    "origen": "México",
+    "tamaño": "Pequeño",
+    "temperamento": "Devoto, alerta, vivaz"
+  },
+  "dachshund": {
+    "origen": "Alemania",
+    "tamaño": "Pequeño",
+    "temperamento": "Terco, inteligente, devoto"
+  },
+  "husky": {
+    "origen": "Rusia (Siberia)",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Extrovertido, amigable, gentil"
+  },
+  "labrador": {
+    "origen": "Canadá / Reino Unido",
+    "tamaño": "Grande",
+    "temperamento": "Equilibrado, gentil, inteligente"
+  },
+  "pug": {
+    "origen": "China",
+    "tamaño": "Pequeño",
+    "temperamento": "Encantador, travieso, cariñoso"
+  },
+  "shiba": {
+    "origen": "Japón",
+    "tamaño": "Pequeño/Mediano",
+    "temperamento": "Alerta, activo, atento"
+  }
+}
