@@ -1,17 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
   const breedSelect = document.getElementById('breed-select');
   const galleryGrid = document.getElementById('gallery-grid');
+  const breedInfoSection = document.getElementById('breed-info-section');
+  const breedInfoCard = document.getElementById('breed-info-card');
 
-  // 1. Fetch breeds list
-  fetch('https://dog.ceo/api/breeds/list/all')
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Error fetching breeds');
-      }
-      return response.json();
+  let localBreedsData = {};
+
+  // 1. Fetch data/breeds.json and breeds list from Dog API concurrently
+  Promise.all([
+    fetch('data/breeds.json').then((res) => (res.ok ? res.json() : {})).catch(() => ({})),
+    fetch('https://dog.ceo/api/breeds/list/all').then((res) => {
+      if (!res.ok) throw new Error('Error fetching breeds');
+      return res.json();
     })
-    .then((data) => {
-      const breeds = Object.keys(data.message);
+  ])
+    .then(([localData, apiData]) => {
+      localBreedsData = localData;
+      const breeds = Object.keys(apiData.message);
       
       // Clear default loading option
       breedSelect.innerHTML = '<option value="" disabled selected>Elegí una raza...</option>';
@@ -24,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     })
     .catch((error) => {
-      console.error('Error fetching dog breeds:', error);
+      console.error('Error inicializando:', error);
       breedSelect.innerHTML = '<option value="" disabled selected>Error cargando razas</option>';
     });
 
@@ -33,10 +38,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedBreed = event.target.value;
     if (!selectedBreed) return;
 
+    displayBreedInfo(selectedBreed);
     fetchImages(selectedBreed);
   });
 
-  // 3. Fetch images for the selected breed
+  // 3. Display breed info from local JSON
+  function displayBreedInfo(breed) {
+    const info = localBreedsData[breed];
+    
+    if (info) {
+      breedInfoCard.innerHTML = `
+        <p><strong>Origen:</strong> ${info.origen}</p>
+        <p><strong>Tamaño:</strong> ${info.tamaño}</p>
+        <p><strong>Temperamento:</strong> ${info.temperamento}</p>
+      `;
+    } else {
+      breedInfoCard.innerHTML = `
+        <p><em>No contamos con información detallada para esta raza todavía.</em></p>
+      `;
+    }
+    
+    breedInfoSection.style.display = 'block';
+  }
+
+  // 4. Fetch images for the selected breed
   function fetchImages(breed) {
     galleryGrid.innerHTML = '<p class="placeholder">Cargando fotos...</p>';
 
