@@ -10,30 +10,36 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1 class="logo">🐶 Razas de Perros</h1>
-      <p class="tagline">Explora las distintas razas, con fotos y datos de cada una.</p>
+    <div class="container navbar">
+      <span class="logo">🐶 Razas de Perros</span>
+      <a class="nav-link" href="https://dog.ceo/dog-api/" target="_blank" rel="noopener noreferrer">Dog CEO API</a>
     </div>
   </header>
 
-  <main class="container">
-    <section class="toolbar" aria-label="Filtros">
-      <select id="breed-select" class="breed-select" aria-label="Seleccionar una raza">
-        <option value="" disabled selected>Cargando razas...</option>
-      </select>
-    </section>
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Descubrí tu raza favorita</h1>
+      <p class="hero-subtitle">Explorá fotos e información de cientos de razas de perros.</p>
+      <div class="hero-select">
+        <label for="breed-select" class="visually-hidden">Elegí una raza</label>
+        <select id="breed-select" class="breed-select" aria-label="Seleccionar una raza">
+          <option value="" disabled selected>Cargando razas…</option>
+        </select>
+      </div>
+    </div>
+  </section>
 
-    <section id="breed-info-section" class="breed-info-section" aria-labelledby="info-heading" style="display: none;">
-      <h2 id="info-heading" class="section-title">Información de la raza</h2>
+  <main class="container">
+    <section id="breed-info-section" class="breed-info-section" aria-labelledby="info-card" style="display: none;">
       <div id="breed-info-card" class="breed-info-card">
-        <!-- El contenido se inyectará desde JS -->
+        <!-- El contenido se inyecta desde JS -->
       </div>
     </section>
 
     <section class="gallery-section" aria-labelledby="gallery-heading">
-      <h2 id="gallery-heading" class="section-title">Galería de la raza</h2>
+      <h2 id="gallery-heading" class="section-title">Galería</h2>
       <div id="gallery-grid" class="breeds-grid">
-        <p class="placeholder">Seleccioná una raza para ver sus fotos.</p>
+        <p class="placeholder">Elegí una raza para ver sus fotos.</p>
       </div>
     </section>
   </main>
