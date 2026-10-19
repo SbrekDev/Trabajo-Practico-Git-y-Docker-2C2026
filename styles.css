@@ -1,88 +1,190 @@
 :root {
-  --bg: #faf7f2;
+  --bg: #f5f5f7;
   --surface: #ffffff;
-  --ink: #2b2b2b;
-  --muted: #6b6b6b;
-  --accent: #c76b3a;
-  --accent-soft: #f3e0d4;
-  --border: #e7e0d8;
-  --radius: 12px;
-  --shadow: 0 4px 16px rgba(43, 43, 43, 0.08);
+  --ink: #1d1d1f;
+  --muted: #6e6e73;
+  --accent: #0071e3;
+  --accent-soft: #e8f1fb;
+  --border: rgba(0, 0, 0, 0.08);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.14);
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--ink);
   background: var(--bg);
-  line-height: 1.5;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
+/* ---------- Header ---------- */
 .site-header {
-  background: var(--ink);
-  color: #fff;
-  padding: 40px 0;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
 }
 
 .logo {
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+}
+
+.nav-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding: 72px 0 40px;
+}
+
+.hero-title {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
 }
 
-.tagline {
-  margin: 8px 0 0;
-  color: #cfcfcf;
+.hero-subtitle {
+  margin: 16px auto 0;
+  max-width: 460px;
+  color: var(--muted);
+  font-size: 1.15rem;
 }
 
-.toolbar {
-  margin: 32px 0 8px;
+.hero-select {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
 }
 
-.search-input,
 .breed-select {
+  appearance: none;
+  -webkit-appearance: none;
   width: 100%;
-  max-width: 360px;
-  padding: 12px 16px;
+  max-width: 320px;
+  padding: 14px 20px;
   font-size: 1rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  color: var(--ink);
   background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
   cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236e6e73' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+.breed-select:hover {
+  border-color: rgba(0, 0, 0, 0.16);
+}
+
+.breed-select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15);
+}
+
+/* ---------- Info card ---------- */
 .breed-info-section {
-  margin-bottom: 24px;
+  margin: 16px 0 32px;
 }
 
 .breed-info-card {
   background: var(--surface);
-  border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 24px;
-  box-shadow: var(--shadow);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
 }
 
-.breed-info-card p {
-  margin: 8px 0;
+.breed-info-card .info-name {
+  margin: 0 0 16px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
 }
 
-.breed-info-card strong {
-  color: var(--accent);
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
 }
 
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.info-value {
+  margin-top: 4px;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.info-empty {
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ---------- Gallery ---------- */
 .section-title {
-  margin: 24px 0 16px;
-  font-size: 1.25rem;
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .breeds-grid {
@@ -93,17 +195,15 @@ body {
 
 .breed-card {
   background: var(--surface);
-  border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: var(--shadow);
-  cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .breed-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(43, 43, 43, 0.14);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
 }
 
 .breed-card img {
@@ -114,27 +214,56 @@ body {
   background: var(--accent-soft);
 }
 
-.breed-card .name {
-  padding: 12px 14px;
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
 .placeholder {
   grid-column: 1 / -1;
   color: var(--muted);
   text-align: center;
-  padding: 40px 0;
+  padding: 48px 0;
 }
 
+/* ---------- Footer ---------- */
 .site-footer {
-  margin-top: 48px;
-  padding: 24px 0;
+  margin-top: 64px;
+  padding: 28px 0;
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .site-footer a {
   color: var(--accent);
+}
+
+/* ---------- Utilities ---------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding: 48px 0 24px;
+  }
+
+  .breeds-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 14px;
+  }
+
+  .breed-info-card {
+    padding: 20px;
+  }
 }

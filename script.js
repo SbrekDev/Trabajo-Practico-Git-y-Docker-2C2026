@@ -45,19 +45,33 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. Display breed info from local JSON
   function displayBreedInfo(breed) {
     const info = localBreedsData[breed];
-    
+    const breedName = breed.charAt(0).toUpperCase() + breed.slice(1);
+
     if (info) {
       breedInfoCard.innerHTML = `
-        <p><strong>Origen:</strong> ${info.origen}</p>
-        <p><strong>Tamaño:</strong> ${info.tamaño}</p>
-        <p><strong>Temperamento:</strong> ${info.temperamento}</p>
+        <h3 class="info-name">${breedName}</h3>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">Origen</span>
+            <span class="info-value">${info.origen}</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Tamaño</span>
+            <span class="info-value">${info.tamaño}</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Temperamento</span>
+            <span class="info-value">${info.temperamento}</span>
+          </div>
+        </div>
       `;
     } else {
       breedInfoCard.innerHTML = `
-        <p><em>No contamos con información detallada para esta raza todavía.</em></p>
+        <h3 class="info-name">${breedName}</h3>
+        <p class="info-empty">Todavía no tenemos información detallada para esta raza.</p>
       `;
     }
-    
+
     breedInfoSection.style.display = 'block';
   }
 

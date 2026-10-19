@@ -1,47 +1,542 @@
 {
+  "affenpinscher": {
+    "origen": "Alemania",
+    "tamaño": "Pequeño",
+    "temperamento": "Terco, valiente, divertido"
+  },
+  "african": {
+    "origen": "África",
+    "tamaño": "Mediano",
+    "temperamento": "Sociable, ágil, enérgico"
+  },
+  "airedale": {
+    "origen": "Reino Unido",
+    "tamaño": "Grande",
+    "temperamento": "Amistoso, valiente, inteligente"
+  },
   "akita": {
     "origen": "Japón",
     "tamaño": "Grande",
     "temperamento": "Fiel, dócil, valiente"
+  },
+  "appenzeller": {
+    "origen": "Suiza",
+    "tamaño": "Mediano",
+    "temperamento": "Enérgico, valiente, confiable"
+  },
+  "australian": {
+    "origen": "Australia",
+    "tamaño": "Mediano",
+    "temperamento": "Inteligente, enérgico, trabajador"
+  },
+  "bakharwal": {
+    "origen": "India",
+    "tamaño": "Grande",
+    "temperamento": "Leal, protector, resistente"
+  },
+  "basenji": {
+    "origen": "África Central",
+    "tamaño": "Pequeño/Mediano",
+    "temperamento": "Independiente, curioso, silencioso"
   },
   "beagle": {
     "origen": "Reino Unido",
     "tamaño": "Mediano",
     "temperamento": "Amigable, curioso, alegre"
   },
+  "bluetick": {
+    "origen": "Estados Unidos",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Leal, enérgico, inteligente"
+  },
+  "borzoi": {
+    "origen": "Rusia",
+    "tamaño": "Grande",
+    "temperamento": "Digno, tranquilo, independiente"
+  },
+  "bouvier": {
+    "origen": "Bélgica",
+    "tamaño": "Grande",
+    "temperamento": "Protector, leal, trabajador"
+  },
   "boxer": {
     "origen": "Alemania",
     "tamaño": "Grande",
     "temperamento": "Juguetón, enérgico, leal"
+  },
+  "brabancon": {
+    "origen": "Bélgica",
+    "tamaño": "Pequeño",
+    "temperamento": "Vivaz, curioso, afectuoso"
+  },
+  "briard": {
+    "origen": "Francia",
+    "tamaño": "Grande",
+    "temperamento": "Leal, protector, inteligente"
+  },
+  "buhund": {
+    "origen": "Noruega",
+    "tamaño": "Mediano",
+    "temperamento": "Alegre, enérgico, leal"
+  },
+  "bulldog": {
+    "origen": "Reino Unido",
+    "tamaño": "Mediano",
+    "temperamento": "Dócil, afectuoso, valiente"
+  },
+  "bullterrier": {
+    "origen": "Reino Unido",
+    "tamaño": "Mediano",
+    "temperamento": "Valiente, juguetón, leal"
+  },
+  "cattledog": {
+    "origen": "Australia",
+    "tamaño": "Mediano",
+    "temperamento": "Inteligente, enérgico, leal"
+  },
+  "cavapoo": {
+    "origen": "Reino Unido / Estados Unidos",
+    "tamaño": "Pequeño",
+    "temperamento": "Afectuoso, sociable, alegre"
   },
   "chihuahua": {
     "origen": "México",
     "tamaño": "Pequeño",
     "temperamento": "Devoto, alerta, vivaz"
   },
+  "chippiparai": {
+    "origen": "India",
+    "tamaño": "Mediano",
+    "temperamento": "Veloz, leal, valiente"
+  },
+  "chow": {
+    "origen": "China",
+    "tamaño": "Mediano",
+    "temperamento": "Independiente, digno, leal"
+  },
+  "clumber": {
+    "origen": "Reino Unido",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Gentil, tranquilo, afectuoso"
+  },
+  "cockapoo": {
+    "origen": "Estados Unidos",
+    "tamaño": "Pequeño/Mediano",
+    "temperamento": "Afectuoso, inteligente, alegre"
+  },
+  "collie": {
+    "origen": "Reino Unido",
+    "tamaño": "Mediano",
+    "temperamento": "Inteligente, leal, enérgico"
+  },
+  "coonhound": {
+    "origen": "Estados Unidos",
+    "tamaño": "Grande",
+    "temperamento": "Leal, enérgico, resistente"
+  },
+  "corgi": {
+    "origen": "Reino Unido",
+    "tamaño": "Pequeño/Mediano",
+    "temperamento": "Alegre, inteligente, leal"
+  },
+  "cotondetulear": {
+    "origen": "Madagascar",
+    "tamaño": "Pequeño",
+    "temperamento": "Afectuoso, sociable, alegre"
+  },
   "dachshund": {
     "origen": "Alemania",
     "tamaño": "Pequeño",
     "temperamento": "Terco, inteligente, devoto"
+  },
+  "dalmatian": {
+    "origen": "Croacia",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Enérgico, inteligente, amistoso"
+  },
+  "dane": {
+    "origen": "Alemania",
+    "tamaño": "Gigante",
+    "temperamento": "Gentil, amistoso, paciente"
+  },
+  "danishswedish": {
+    "origen": "Dinamarca / Suecia",
+    "tamaño": "Pequeño/Mediano",
+    "temperamento": "Vivaz, amistoso, activo"
+  },
+  "deerhound": {
+    "origen": "Escocia",
+    "tamaño": "Grande",
+    "temperamento": "Gentil, digno, valiente"
+  },
+  "dhole": {
+    "origen": "Asia",
+    "tamaño": "Mediano",
+    "temperamento": "Salvaje, social, cazador"
+  },
+  "dingo": {
+    "origen": "Australia",
+    "tamaño": "Mediano",
+    "temperamento": "Salvaje, independiente, ágil"
+  },
+  "doberman": {
+    "origen": "Alemania",
+    "tamaño": "Grande",
+    "temperamento": "Leal, valiente, alerta"
+  },
+  "elkhound": {
+    "origen": "Noruega",
+    "tamaño": "Mediano",
+    "temperamento": "Leal, enérgico, amistoso"
+  },
+  "entlebucher": {
+    "origen": "Suiza",
+    "tamaño": "Mediano",
+    "temperamento": "Leal, enérgico, inteligente"
+  },
+  "eskimo": {
+    "origen": "Estados Unidos / Alemania",
+    "tamaño": "Pequeño/Mediano",
+    "temperamento": "Alegre, inteligente, amistoso"
+  },
+  "finnish": {
+    "origen": "Finlandia",
+    "tamaño": "Mediano",
+    "temperamento": "Amistoso, valiente, enérgico"
+  },
+  "frise": {
+    "origen": "Francia / Bélgica",
+    "tamaño": "Pequeño",
+    "temperamento": "Alegre, afectuoso, juguetón"
+  },
+  "gaddi": {
+    "origen": "India",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Leal, protector, resistente"
+  },
+  "german": {
+    "origen": "Alemania",
+    "tamaño": "Grande",
+    "temperamento": "Inteligente, leal, valiente"
+  },
+  "greyhound": {
+    "origen": "Egipto / Reino Unido",
+    "tamaño": "Grande",
+    "temperamento": "Veloz, gentil, independiente"
+  },
+  "groenendael": {
+    "origen": "Bélgica",
+    "tamaño": "Grande",
+    "temperamento": "Leal, inteligente, protector"
+  },
+  "havanese": {
+    "origen": "Cuba",
+    "tamaño": "Pequeño",
+    "temperamento": "Afectuoso, sociable, juguetón"
+  },
+  "hound": {
+    "origen": "Varios orígenes",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Cazador, leal, resistente"
   },
   "husky": {
     "origen": "Rusia (Siberia)",
     "tamaño": "Mediano/Grande",
     "temperamento": "Extrovertido, amigable, gentil"
   },
+  "keeshond": {
+    "origen": "Países Bajos / Alemania",
+    "tamaño": "Mediano",
+    "temperamento": "Amistoso, alerta, alegre"
+  },
+  "kelpie": {
+    "origen": "Australia",
+    "tamaño": "Mediano",
+    "temperamento": "Inteligente, enérgico, trabajador"
+  },
+  "kombai": {
+    "origen": "India",
+    "tamaño": "Mediano",
+    "temperamento": "Leal, valiente, protector"
+  },
+  "komondor": {
+    "origen": "Hungría",
+    "tamaño": "Grande",
+    "temperamento": "Protector, leal, independiente"
+  },
+  "kuvasz": {
+    "origen": "Hungría",
+    "tamaño": "Grande",
+    "temperamento": "Leal, protector, independiente"
+  },
+  "labradoodle": {
+    "origen": "Australia",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Afectuoso, inteligente, enérgico"
+  },
   "labrador": {
     "origen": "Canadá / Reino Unido",
     "tamaño": "Grande",
     "temperamento": "Equilibrado, gentil, inteligente"
+  },
+  "leonberg": {
+    "origen": "Alemania",
+    "tamaño": "Gigante",
+    "temperamento": "Gentil, tranquilo, leal"
+  },
+  "lhasa": {
+    "origen": "Tíbet",
+    "tamaño": "Pequeño",
+    "temperamento": "Independiente, alerta, leal"
+  },
+  "malamute": {
+    "origen": "Estados Unidos (Alaska)",
+    "tamaño": "Grande",
+    "temperamento": "Leal, fuerte, independiente"
+  },
+  "malinois": {
+    "origen": "Bélgica",
+    "tamaño": "Grande",
+    "temperamento": "Inteligente, trabajador, leal"
+  },
+  "maltese": {
+    "origen": "Malta / Italia",
+    "tamaño": "Pequeño",
+    "temperamento": "Afectuoso, vivaz, gentil"
+  },
+  "mastiff": {
+    "origen": "Reino Unido",
+    "tamaño": "Gigante",
+    "temperamento": "Protector, tranquilo, leal"
+  },
+  "mexicanhairless": {
+    "origen": "México",
+    "tamaño": "Pequeño/Mediano",
+    "temperamento": "Leal, tranquilo, alerta"
+  },
+  "mix": {
+    "origen": "Variado",
+    "tamaño": "Variado",
+    "temperamento": "Único, afectuoso, especial"
+  },
+  "mountain": {
+    "origen": "Suiza",
+    "tamaño": "Grande",
+    "temperamento": "Gentil, tranquilo, leal"
+  },
+  "mudhol": {
+    "origen": "India",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Veloz, leal, valiente"
+  },
+  "newfoundland": {
+    "origen": "Canadá",
+    "tamaño": "Gigante",
+    "temperamento": "Gentil, paciente, devoto"
+  },
+  "otterhound": {
+    "origen": "Reino Unido",
+    "tamaño": "Grande",
+    "temperamento": "Amistoso, enérgico, curioso"
+  },
+  "ovcharka": {
+    "origen": "Rusia / Georgia",
+    "tamaño": "Grande",
+    "temperamento": "Protector, valiente, leal"
+  },
+  "papillon": {
+    "origen": "Francia / Bélgica",
+    "tamaño": "Pequeño",
+    "temperamento": "Inteligente, alegre, amistoso"
+  },
+  "pariah": {
+    "origen": "India",
+    "tamaño": "Mediano",
+    "temperamento": "Independiente, resistente, ágil"
+  },
+  "pekinese": {
+    "origen": "China",
+    "tamaño": "Pequeño",
+    "temperamento": "Digno, leal, independiente"
+  },
+  "pembroke": {
+    "origen": "Gales",
+    "tamaño": "Pequeño/Mediano",
+    "temperamento": "Alegre, inteligente, leal"
+  },
+  "pinscher": {
+    "origen": "Alemania",
+    "tamaño": "Pequeño",
+    "temperamento": "Vivaz, valiente, leal"
+  },
+  "pitbull": {
+    "origen": "Estados Unidos",
+    "tamaño": "Mediano",
+    "temperamento": "Leal, enérgico, afectuoso"
+  },
+  "pointer": {
+    "origen": "Alemania / Reino Unido",
+    "tamaño": "Grande",
+    "temperamento": "Enérgico, leal, inteligente"
+  },
+  "pomeranian": {
+    "origen": "Alemania / Polonia",
+    "tamaño": "Pequeño",
+    "temperamento": "Vivaz, valiente, afectuoso"
+  },
+  "poodle": {
+    "origen": "Francia / Alemania",
+    "tamaño": "Pequeño a Grande",
+    "temperamento": "Inteligente, activo, elegante"
   },
   "pug": {
     "origen": "China",
     "tamaño": "Pequeño",
     "temperamento": "Encantador, travieso, cariñoso"
   },
+  "puggle": {
+    "origen": "Estados Unidos",
+    "tamaño": "Pequeño/Mediano",
+    "temperamento": "Afectuoso, juguetón, sociable"
+  },
+  "pyrenees": {
+    "origen": "Francia / España",
+    "tamaño": "Grande",
+    "temperamento": "Protector, tranquilo, leal"
+  },
+  "rajapalayam": {
+    "origen": "India",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Leal, valiente, protector"
+  },
+  "redbone": {
+    "origen": "Estados Unidos",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Amistoso, enérgico, leal"
+  },
+  "retriever": {
+    "origen": "Reino Unido / Estados Unidos",
+    "tamaño": "Grande",
+    "temperamento": "Amistoso, inteligente, leal"
+  },
+  "ridgeback": {
+    "origen": "Zimbabue",
+    "tamaño": "Grande",
+    "temperamento": "Leal, valiente, independiente"
+  },
+  "rottweiler": {
+    "origen": "Alemania",
+    "tamaño": "Grande",
+    "temperamento": "Leal, valiente, protector"
+  },
+  "rough": {
+    "origen": "Escocia",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Leal, inteligente, gentil"
+  },
+  "saluki": {
+    "origen": "Oriente Medio",
+    "tamaño": "Grande",
+    "temperamento": "Digno, veloz, independiente"
+  },
+  "samoyed": {
+    "origen": "Rusia (Siberia)",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Amistoso, gentil, alegre"
+  },
+  "schipperke": {
+    "origen": "Bélgica",
+    "tamaño": "Pequeño",
+    "temperamento": "Alerta, curioso, leal"
+  },
+  "schnauzer": {
+    "origen": "Alemania",
+    "tamaño": "Pequeño a Grande",
+    "temperamento": "Inteligente, enérgico, leal"
+  },
+  "segugio": {
+    "origen": "Italia",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Leal, enérgico, cazador"
+  },
+  "setter": {
+    "origen": "Reino Unido / Irlanda",
+    "tamaño": "Grande",
+    "temperamento": "Amistoso, enérgico, gentil"
+  },
+  "sharpei": {
+    "origen": "China",
+    "tamaño": "Mediano",
+    "temperamento": "Independiente, leal, tranquilo"
+  },
+  "sheepdog": {
+    "origen": "Reino Unido",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Inteligente, trabajador, leal"
+  },
   "shiba": {
     "origen": "Japón",
     "tamaño": "Pequeño/Mediano",
     "temperamento": "Alerta, activo, atento"
+  },
+  "shihtzu": {
+    "origen": "Tíbet / China",
+    "tamaño": "Pequeño",
+    "temperamento": "Afectuoso, alegre, amistoso"
+  },
+  "spaniel": {
+    "origen": "España / Reino Unido",
+    "tamaño": "Mediano",
+    "temperamento": "Alegre, afectuoso, enérgico"
+  },
+  "spitz": {
+    "origen": "Varios orígenes",
+    "tamaño": "Pequeño/Mediano",
+    "temperamento": "Leal, alerta, enérgico"
+  },
+  "springer": {
+    "origen": "Reino Unido",
+    "tamaño": "Mediano",
+    "temperamento": "Amistoso, enérgico, inteligente"
+  },
+  "stbernard": {
+    "origen": "Suiza",
+    "tamaño": "Gigante",
+    "temperamento": "Gentil, paciente, leal"
+  },
+  "terrier": {
+    "origen": "Reino Unido",
+    "tamaño": "Pequeño/Mediano",
+    "temperamento": "Valiente, enérgico, leal"
+  },
+  "tervuren": {
+    "origen": "Bélgica",
+    "tamaño": "Grande",
+    "temperamento": "Inteligente, leal, protector"
+  },
+  "vizsla": {
+    "origen": "Hungría",
+    "tamaño": "Mediano/Grande",
+    "temperamento": "Afectuoso, enérgico, leal"
+  },
+  "waterdog": {
+    "origen": "España",
+    "tamaño": "Mediano",
+    "temperamento": "Inteligente, trabajador, leal"
+  },
+  "weimaraner": {
+    "origen": "Alemania",
+    "tamaño": "Grande",
+    "temperamento": "Enérgico, leal, inteligente"
+  },
+  "whippet": {
+    "origen": "Reino Unido",
+    "tamaño": "Mediano",
+    "temperamento": "Gentil, veloz, tranquilo"
+  },
+  "wolfhound": {
+    "origen": "Irlanda",
+    "tamaño": "Gigante",
+    "temperamento": "Gentil, valiente, tranquilo"
   }
 }
