@@ -21,7 +21,7 @@ Para seguir esta guía solo necesitás **una** de estas dos cosas:
 
 | Opción | Qué necesitás | Para quién es |
 |--------|---------------|---------------|
-| **A. Con Docker** (recomendada) | [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado | La forma más limpia y la que pedís en el TP |
+| **A. Con Docker** (recomendada) | [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado | La forma más limpia y la que se solicita en el TP |
 | **B. Sin Docker** | Un navegador y [Python](https://www.python.org/downloads/) (o VS Code con Live Server) | Para probar rápido sin instalar Docker |
 
 > 💡 **¿No tenés Docker?** Descargá e instalá [Docker Desktop](https://www.docker.com/products/docker-desktop/), abrilo y esperá a que diga que está corriendo. Con eso ya alcanza.
