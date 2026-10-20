@@ -37,7 +37,6 @@ body {
   padding: 0 24px;
 }
 
-/* ---------- Header ---------- */
 .site-header {
   background: rgba(255, 255, 255, 0.72);
   backdrop-filter: saturate(180%) blur(20px);
@@ -72,7 +71,6 @@ body {
   text-decoration: underline;
 }
 
-/* ---------- Hero ---------- */
 .hero {
   text-align: center;
   padding: 72px 0 40px;
@@ -128,7 +126,6 @@ body {
   box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15);
 }
 
-/* ---------- Info card ---------- */
 .breed-info-section {
   margin: 16px 0 32px;
 }
@@ -179,7 +176,6 @@ body {
   margin: 0;
 }
 
-/* ---------- Gallery ---------- */
 .section-title {
   margin: 0 0 20px;
   font-size: 1.5rem;
@@ -221,7 +217,6 @@ body {
   padding: 48px 0;
 }
 
-/* ---------- Footer ---------- */
 .site-footer {
   margin-top: 64px;
   padding: 28px 0;
@@ -235,7 +230,6 @@ body {
   color: var(--accent);
 }
 
-/* ---------- Utilities ---------- */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -248,7 +242,6 @@ body {
   border: 0;
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 600px) {
   .container {
     padding: 0 16px;

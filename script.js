@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let localBreedsData = {};
 
-  // 1. Fetch data/breeds.json and breeds list from Dog API concurrently
   Promise.all([
     fetch('data/breeds.json').then((res) => (res.ok ? res.json() : {})).catch(() => ({})),
     fetch('https://dog.ceo/api/breeds/list/all').then((res) => {
@@ -17,10 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(([localData, apiData]) => {
       localBreedsData = localData;
       const breeds = Object.keys(apiData.message);
-      
-      // Clear default loading option
+
       breedSelect.innerHTML = '<option value="" disabled selected>Elegí una raza...</option>';
-      
+
       breeds.forEach((breed) => {
         const option = document.createElement('option');
         option.value = breed;
@@ -33,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
       breedSelect.innerHTML = '<option value="" disabled selected>Error cargando razas</option>';
     });
 
-  // 2. Event listener for selection
   breedSelect.addEventListener('change', (event) => {
     const selectedBreed = event.target.value;
     if (!selectedBreed) return;
@@ -42,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchImages(selectedBreed);
   });
 
-  // 3. Display breed info from local JSON
   function displayBreedInfo(breed) {
     const info = localBreedsData[breed];
     const breedName = breed.charAt(0).toUpperCase() + breed.slice(1);
@@ -75,11 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
     breedInfoSection.style.display = 'block';
   }
 
-  // 4. Fetch images for the selected breed
   function fetchImages(breed) {
     galleryGrid.innerHTML = '<p class="placeholder">Cargando fotos...</p>';
 
-    // Fetch 4 random images of the selected breed
     fetch(`https://dog.ceo/api/breed/${breed}/images/random/4`)
       .then((response) => {
         if (!response.ok) {
@@ -89,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then((data) => {
         const images = data.message;
-        galleryGrid.innerHTML = ''; // Clear placeholder
+        galleryGrid.innerHTML = '';
 
         if (images.length === 0) {
           galleryGrid.innerHTML = '<p class="placeholder">No hay fotos disponibles para esta raza.</p>';
@@ -99,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         images.forEach((imgUrl) => {
           const card = document.createElement('div');
           card.className = 'breed-card';
-          
+
           const img = document.createElement('img');
           img.src = imgUrl;
           img.alt = `Foto de un ${breed}`;
